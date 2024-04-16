@@ -43,9 +43,9 @@ func TestStringzillaFind(t *testing.T) {
 	for _, test := range tests {
 		found, output := stringzilla.Find(test.haystack, test.needle)
 		if found != test.expectedFound || output != test.expected {
-			t.Errorf("Test failed: %s inputted, %s expected, got %t, %d", test.haystack, test.needle, test.expectedFound, test.expected)
+			t.Errorf("Test failed: %s inputted, %s searched, got %t, %d", test.haystack, test.needle, test.expectedFound, test.expected)
 		} else {
-			t.Logf("Test passed: %s inputted, %s expected, got %t, %d", test.haystack, test.needle, test.expectedFound, test.expected)
+			t.Logf("Test passed: %s inputted, %s searched, got %t, %d", test.haystack, test.needle, test.expectedFound, test.expected)
 		}
 	}
 }

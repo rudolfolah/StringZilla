@@ -36,7 +36,7 @@ func TestStringzillaFind(t *testing.T) {
 	}{
 		{"Hello", "l", true, 2},
 		{"hello", "e", true, 1},
-		{"HELLO", "o", true, 4},
+		{"HELLO", "O", true, 4},
 		{"word", "d", true, 3},
 	}
 
